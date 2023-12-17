@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    margin: 5px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.generate-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.generate-btn:hover {
+    background-color: #45a049;
+}
+
+.chart-container {
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#myChart {
+	width: 50% !important;
+	height: 50% !important;
+}

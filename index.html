@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gráfico de Radar</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+	<div class="container">
+		<h1>Evaluación mediante Gráfico de Radar</h1>
+		<p>Introduce los valores para cada categoría y haz clic en "Generar Gráfico" para visualizar la evaluación.</p>
+
+		<div class="form-container">
+			<label>Forma: <input type="number" id="forma"></label><br>
+			<label>Basicos: <input type="number" id="basicos"></label><br>
+			<label>Sambo Matsokgi: <input type="number" id="samboMatsokgi"></label><br>
+			<label>Accesorios: <input type="number" id="accesorios"></label><br>
+			<label>Lucha: <input type="number" id="lucha"></label><br>
+			<label>Rotura: <input type="number" id="rotura"></label><br>
+			<label>Teoria: <input type="number" id="teoria"></label><br>
+			<label>Actitud: <input type="number" id="actitud"></label><br>
+		</div>
+
+		<button onclick="drawChart()" class="generate-btn">Generar Gráfico</button>
+
+		<div class="chart-container">
+			<canvas id="myChart"></canvas>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
